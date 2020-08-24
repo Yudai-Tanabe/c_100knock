@@ -1,0 +1,14 @@
+#include<stdio.h>
+
+int main(void) {
+	int a, b;
+	printf("input 1st number:");
+	scanf("%d", &a);
+	printf("input 2nd number:");
+	scanf("%d", &b);
+	printf("òa: %d\n", a + b);
+	printf("ç∑: %d\n", a - b);
+	printf("êœ: %d\n", a * b);
+	printf("è§: %d, ó]ÇË: %d\n", a / b, a % b);
+	return 0;
+}
