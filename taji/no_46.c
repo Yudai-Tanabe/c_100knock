@@ -1,0 +1,22 @@
+#include<stdio.h>
+
+int main(void) {
+	int a, b;
+	printf("êlêî ");
+	scanf("%d", &a);
+
+	if (a < 5) {
+		b = 600 * a;
+	}
+	else if((5 <= a) && (a < 20)){
+		b = 550 * a;
+	}
+	else {
+		b = 500 * a;
+	}
+
+	printf("óøã‡ %d\n", b);
+
+
+	return 0;
+}
