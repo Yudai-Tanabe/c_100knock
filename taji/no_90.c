@@ -29,20 +29,18 @@ int main(void) {
 		a[x] = tmp;
 	}
 
-	for (i = 0; i < 52; i++) {
-		if (a[i] <= 13) {
-			printf("%s\t%d\n", s, a[i]);
+	for (i = 0; i < 2; i++) {
+		if (((a[i] % 13) + 1) <= 10) {
+			a[i] = (a[i] % 13) + 1;
+			printf("%d ", a[i]);
 		}
-		else if (13 < a[i] && a[i] <= 26) {
-			printf("%s\t\t%d\n", h, (a[i] % 13) + 1);
-		}
-		else if (26 < a[i] && a[i] <= 39) {
-			printf("%s\t%d\n", c, (a[i] % 13) + 1);
-		}
-		else {
-			printf("%s\t\t%d\n", d, (a[i] % 13) + 1);
+		else if (10 < ((a[i] % 13) + 1)) {
+			a[i] = 10;
+			printf("%d ", a[i]);
 		}
 	}
+
+	printf(": ‡Œv%d", a[0] + a[1]);
 
 
 	return 0;

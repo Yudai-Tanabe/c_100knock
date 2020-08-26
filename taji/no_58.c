@@ -1,12 +1,9 @@
 #include<stdio.h>
 
 int main(void) {
-	int a[5];
-
-	for (int i = 0; i < 5; i++) {
-		printf("input data[%d]: ", i);
-		scanf("%d", &a[i]);
-	}
+	int a;
+	printf("input number: ", a);
+	scanf("%d", &a);
 
 	for (int i = 0; i < 5; i++) {
 		printf("%d\t:", a[i]);
